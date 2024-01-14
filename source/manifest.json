@@ -1,0 +1,30 @@
+{
+	"manifest_version": 3,
+	"version": "1.0",
+	"name": "Good Brainly",
+	"description": "Enhance your Brainly experience by removing the ads.",
+	"author": "im-razvan",
+	"content_scripts": [
+	  {
+		"run_at": "document_idle",
+		"matches": [
+			"*://*.brainly.com/*",
+			"*://*.brainly.ro/*",
+			"*://*.brainly.in/*",
+			"*://*.brainly.co.id/*",
+			"*://*.brainly.ph/*",
+			"*://*.brainly.pl/*",
+			"*://*.brainly.lat/*",
+			"*://*.brainly.com.br/*",
+			"*://*.nosdevoirs.fr/*",
+			"*://*.eodev.com/*",
+			"*://*.znanija.com/*"
+		  ],
+		"js": ["index.js"]
+	  }
+	],
+	"icons": {
+	  "200": "assets/favicon.png"
+	}
+  }
+  
